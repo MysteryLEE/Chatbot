@@ -2,7 +2,7 @@ import response
 from wxpy import *
 bot = Bot()
 
-my_friend = bot.friends().search('Jay Huang')[0]
+my_friend = bot.friends().search('name')[0] # Replace name with the friend's WeChat name
 my_friend.send(response.introduction)
 my_friend.send(response.company)
 my_friend.send(response.question)
